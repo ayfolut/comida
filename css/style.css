@@ -320,6 +320,20 @@ hr {
   margin: 1rem 0;
 }
 
+.item {
+  padding-bottom: 0.5rem;
+}
+
+.slider .slides li img {
+  opacity: 0.9;
+  background-color: black !important;
+}
+
+.caption p {
+  margin-bottom: 1rem;
+  font-size: 15px;
+}
+
 @media screen and (min-width: 600px) {
   #gallery .responsive-img {
     margin-bottom: 0.5rem;

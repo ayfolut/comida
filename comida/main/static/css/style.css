@@ -1,486 +1,509 @@
 *,
 *::after,
 *::before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .hide-on-sm {
-  display: none;
+    display: none;
 }
 
 body {
-  font-family: "Poppins", san-serif;
-  font-size: 13px;
-  line-height: 1.3;
-  margin: 0;
-  padding: 0;
+    font-family: 'Poppins', san-serif;
+    font-size: 13px;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 3rem 0 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 3rem 0 2rem;
 }
 
 .logo h1 {
-  font-size: 72px;
-  font-family: 'Big Shoulders Stencil Text', cursive;
-  background: -webkit-linear-gradient(#9fd8d2, #009688);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    font-size: 72px;
+    font-family: 'Big Shoulders Stencil Text', cursive;
+    background: -webkit-linear-gradient(#9fd8d2, #009688);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 form {
-  width: 80%;
-  margin: auto;
+    width: 80%;
+    margin: auto;
 }
 
 form label {
-  display: block;
-  margin: 3rem 0 1rem;
+    display: block;
+    margin: 3rem 0 1rem;
 }
 
 form input {
-  border-top: 0;
-  border-right: 0;
-  border-left: 0;
-  border-bottom: solid 1px gray;
-  outline: none;
-  width: 100%;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: solid 1px gray;
+    outline: none;
+    width: 100%;
 }
 
 button {
-  display: block;
-  border: none;
-  outline: none;
-  margin: 2rem 0;
-  width: 100%;
-  padding: 0.7rem;
-  border-radius: 5px;
-  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  background: #009688;
-  color: #fff;
-  cursor: pointer;
+    display: block;
+    border: none;
+    outline: none;
+    margin: 2rem 0;
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #009688;
+    color: #fff;
+    cursor: pointer;
 }
 
 button:hover {
-  opacity: 0.8;
+    opacity: 0.8;
 }
 
 .sign-in {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-animation: opacity 0.5s;
-          animation: opacity 0.5s;
-  width: 100%;
-  margin: auto;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-animation: opacity 0.5s;
+    animation: opacity 0.5s;
+    width: 100%;
+    margin: auto;
 }
 
 .sign-in h2 {
-  margin: 2rem 0 2.5rem;
+    margin: 2rem 0 2.5rem;
 }
 
 .sign-up {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: none;
-  -webkit-animation: opacity 0.5s;
-          animation: opacity 0.5s;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    display: none;
+    -webkit-animation: opacity 0.5s;
+    animation: opacity 0.5s;
 }
 
 @-webkit-keyframes opacity {
-  from {
-    opacity: 0.4;
-    left: -600px;
-  }
-  to {
-    opacity: 1;
-    left: 0;
-  }
+    from {
+        opacity: 0.4;
+        left: -600px;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
 }
 
 @keyframes opacity {
-  from {
-    opacity: 0.4;
-    left: -600px;
-  }
-  to {
-    opacity: 1;
-    left: 0;
-  }
+    from {
+        opacity: 0.4;
+        left: -600px;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
 }
 
 .sign,
 .signUp {
-  color: #009688;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+    color: #009688;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .sign:hover,
 .signUp:hover {
-  opacity: 0.8;
-  text-decoration: underline;
+    opacity: 0.8;
+    text-decoration: underline;
 }
 
 .brand-logo {
-  font-family: 'Big Shoulders Stencil Text', cursive;
+    font-family: 'Big Shoulders Stencil Text', cursive;
 }
 
 .btn- {
-  width: 60%;
+    width: 60%;
 }
 
 .follow {
-  padding: 0.1rem 0 1rem;
+    padding: 0.1rem 0 1rem;
 }
 
 .follow .fa-3x {
-  margin: 1rem 0.3rem;
+    margin: 1rem 0.3rem;
 }
 
 #gallery .responsive-img {
-  margin-bottom: 0.5rem;
-  width: 100%;
-  height: 230px !important;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    height: 230px !important;
 }
 
 #gallery .responsive-img .responsive-img img {
-  width: 100%;
-  height: 100% !important;
+    width: 100%;
+    height: 100% !important;
 }
 
 #popular-places {
-  margin-bottom: 2rem;
-  position: relative;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
 #popular-places .select {
-  width: 150px;
-  position: relative;
-  left: 10px;
+    width: 150px;
+    position: relative;
+    left: 10px;
 }
 
 .footer {
-  padding: 1rem 0;
+    padding: 1rem 0;
 }
 
 .bold-text {
-  font-weight: bolder;
+    font-weight: bolder;
 }
 
 .card-content {
-  color: #000000;
+    color: #000000;
 }
 
 .prod-1 {
-  cursor: pointer;
+    cursor: pointer;
 }
 
 .prod-1:hover {
-  -webkit-transform: scale(0.99);
-          transform: scale(0.99);
+    -webkit-transform: scale(0.99);
+    transform: scale(0.99);
 }
 
 .produce {
-  display: none;
+    display: none;
 }
 
 .current {
-  display: block;
-  -webkit-animation: meee 0.5s;
-          animation: meee 0.5s;
+    display: block;
+    -webkit-animation: meee 0.5s;
+    animation: meee 0.5s;
 }
 
 @-webkit-keyframes meee {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes meee {
-  from {
-    opacity: 0.5;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0.5;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .pay {
-  margin: 2rem auto 0;
+    margin: 2rem auto 0;
 }
 
 .chevron {
-  margin-left: 0.5rem;
-  padding: 1rem;
-  color: #009688;
-  font-size: 15px;
-  cursor: pointer;
+    margin-left: 0.5rem;
+    padding: 1rem;
+    color: #009688;
+    font-size: 15px;
+    cursor: pointer;
 }
 
 .chevron a {
-  color: #009688;
-  text-decoration: none;
+    color: #009688;
+    text-decoration: none;
 }
 
 .chevron:hover {
-  opacity: 0.8 !important;
+    opacity: 0.8 !important;
 }
 
 .sign-in-out {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
 
 .sign-in-in {
-  display: none;
+    display: none;
 }
 
 .profile {
-  margin: 3rem auto;
+    margin: 3rem auto;
 }
 
 .details {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .details .det-01 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .details h6 {
-  text-transform: uppercase;
-  padding-left: 0.5rem;
+    text-transform: uppercase;
+    padding-left: 0.5rem;
 }
 
 hr {
-  margin: 1rem 0;
+    margin: 1rem 0;
+}
+
+.item {
+    padding-bottom: 0.5rem;
+}
+
+.slider .slides li img {
+    opacity: 0.9;
+    background-color: black !important;
+}
+
+.caption p {
+    margin-bottom: 1rem;
+    font-size: 15px;
+}
+
+.pass {
+    margin-left: 1rem;
+}
+
+.pass a {
+    color: #009688;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 600px) {
-  #gallery .responsive-img {
-    margin-bottom: 0.5rem;
-    width: 100%;
-    height: 120px !important;
-  }
+    #gallery .responsive-img {
+        margin-bottom: 0.5rem;
+        width: 100%;
+        height: 120px !important;
+    }
 }
 
 @media screen and (min-width: 1024px) {
-  body {
-    height: 100vh;
-  }
-  #popular-places .select {
-    width: 150px;
-    margin: 0 20px 0 auto;
-  }
-  .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
+    body {
+        height: 100vh;
+    }
+    #popular-places .select {
+        width: 150px;
+        margin: 0 20px 0 auto;
+    }
+    .wrapper {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
+        justify-content: center;
+        -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    margin: auto;
-    padding: 0;
-  }
-  @-webkit-keyframes opacity {
-    from {
-      opacity: 0.4;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 0;
     }
-    to {
-      opacity: 1;
+    @-webkit-keyframes opacity {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
     }
-  }
-  @keyframes opacity {
-    from {
-      opacity: 0.4;
+    @keyframes opacity {
+        from {
+            opacity: 0.4;
+        }
+        to {
+            opacity: 1;
+        }
     }
-    to {
-      opacity: 1;
+    .hide-on-sm {
+        display: block;
     }
-  }
-  .hide-on-sm {
-    display: block;
-  }
-  .btn- {
-    width: 30%;
-  }
-  .signing {
-    width: 60vw;
-  }
-  .signing button {
-    text-transform: uppercase;
-    padding: 1.3rem;
-    width: 40%;
-    font-size: 20px;
-    letter-spacing: 3px;
-  }
-  .logo {
-    display: none;
-  }
-  .farm {
-    background: url("../img/images(3).jpg") no-repeat center center/cover;
-    width: 40vw;
-    height: 100vh;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
+    .btn- {
+        width: 30%;
+    }
+    .signing {
+        width: 60vw;
+    }
+    .signing button {
+        text-transform: uppercase;
+        padding: 1.3rem;
+        width: 40%;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .logo {
+        display: none;
+    }
+    .farm {
+        background: url('../static/img/images(3).jpg') no-repeat center center/cover;
+        width: 40vw;
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
+        justify-content: center;
+        -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 1rem;
-    color: #fff;
-  }
-  .farm h3 {
-    font-size: 40px;
-  }
-  .farm p {
-    font-size: 20px;
-  }
-  .farm .btn-create {
-    text-transform: uppercase;
-    padding: 1.5rem;
-    width: 80%;
-    font-size: 20px;
-    letter-spacing: 3px;
-  }
-  .toggle {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
+        flex-direction: column;
+        padding: 1rem;
+        color: #fff;
+    }
+    .farm h3 {
+        font-size: 40px;
+    }
+    .farm p {
+        font-size: 20px;
+    }
+    .farm .btn-create {
+        text-transform: uppercase;
+        padding: 1.5rem;
+        width: 80%;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+    .toggle {
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .none {
-    display: none;
-  }
-  .display .btn-create {
-    display: none;
-  }
-  .display .none {
-    display: block;
-  }
-  .no-acct {
-    -webkit-box-pack: end;
+        justify-content: center;
+    }
+    .none {
+        display: none;
+    }
+    .display .btn-create {
+        display: none;
+    }
+    .display .none {
+        display: block;
+    }
+    .no-acct {
+        -webkit-box-pack: end;
         -ms-flex-pack: end;
-            justify-content: flex-end;
-    -ms-flex-item-align: start;
+        justify-content: flex-end;
+        -ms-flex-item-align: start;
         align-self: flex-start;
-    display: none;
-  }
-  #gallery .responsive-img {
-    margin-bottom: 0.5rem;
-    width: 100%;
-    height: 150px !important;
-  }
-  .checkout {
-    margin-left: 5rem;
-  }
-  .chevron {
-    position: absolute;
-    top: 0;
-    left: 40%;
-  }
-  .chevron a {
-    color: #009688;
-    text-decoration: none;
-  }
-  .chevron:hover {
-    opacity: 0.8 !important;
-  }
+        display: none;
+    }
+    #gallery .responsive-img {
+        margin-bottom: 0.5rem;
+        width: 100%;
+        height: 150px !important;
+    }
+    .checkout {
+        margin-left: 5rem;
+    }
+    .chevron {
+        position: absolute;
+        top: 0;
+        left: 40%;
+    }
+    .chevron a {
+        color: #009688;
+        text-decoration: none;
+    }
+    .chevron:hover {
+        opacity: 0.8 !important;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-  .signing button {
-    width: 30%;
-  }
-  .farm h3 {
-    font-size: 50px;
-  }
-  .farm p {
-    font-size: 20px;
-  }
-  .farm .btn-create {
-    text-transform: uppercase;
-    padding: 1.5rem;
-    width: 60%;
-    font-size: 20px;
-    letter-spacing: 3px;
-  }
+    .signing button {
+        width: 30%;
+    }
+    .farm h3 {
+        font-size: 50px;
+    }
+    .farm p {
+        font-size: 20px;
+    }
+    .farm .btn-create {
+        text-transform: uppercase;
+        padding: 1.5rem;
+        width: 60%;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
 }

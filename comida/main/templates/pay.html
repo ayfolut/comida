@@ -30,12 +30,12 @@
             >
             <ul class="right hide-on-med-and-down">
               <li><a href="{{url_for('root.index')}}">Home</a></li>
-              {%if current_user.is_anonymous%}
-              <li><a href="{{url_for('auth.login')}}">Sign Up / Sign In</a></li>
-              {%else%}
-              <li><a href="{{url_for('auth.logout')}}">Logout</a></li>
-              {%endif%}
-                          <li><a href="#popular-places">Popular Products</a></li>
+                    {%if current_user.is_anonymous%}
+                    <li><a href="{{url_for('auth.login')}}">Sign Up / Sign In</a></li>
+                    {%else%}
+                    <li><a href="{{url_for('auth.logout')}}">Logout</a></li>
+                    {%endif%}
+                    <li><a href="#popular-places">Popular Products</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -57,25 +57,29 @@
 
     <!-- Payment -->
     <div class="container">
-        <div class="chevron">
-            <a href="{{url_for('root.index')}}"><i class="fa fa-chevron-left"></i> Go Home</a>
-        </div>
         <div class="row pay">
             <div>
                 <div class="col s12 m5">
                     <div class="card">
                         <div class="card-image">
                             <img src="{{url_for('main.static', filename='img/Veg 01.jpg')}}" alt="Farm Two" />
-                            <span class="card-title black-text">Dry Vegetables</span>
                         </div>
                         <div class="card-content">
-                            <strong class="bold-text">Price:</strong> $150.00
+                            <p class="item">Dry Vegetables</p>
+                            <p><strong class="bold-text">Price:</strong> $150.00</p>
                         </div>
                     </div>
                 </div>
                 <div class="col s12 m6">
                     <div class="checkout">
-                        <h5>Checkout</h5>
+                        <div class="input-field">
+                            <select>
+                  <option value="" disabled selected>Add Card</option>
+                  <option value="mastercard">Mastercard</option>
+                  <option value="visa">Visa</option>
+                  <option value="verve">Verve</option>
+                </select>
+                        </div>
                         <div class="input-field">
                             <input type="text" placeholder="Credit Card Number" />
                         </div>

@@ -30,12 +30,12 @@
             >
             <ul class="right hide-on-med-and-down">
               <li><a href="#showcase">Home</a></li>
-              {%if current_user.is_anonymous%}
+                    {%if current_user.is_anonymous%}
                     <li><a href="{{url_for('auth.login')}}">Sign Up / Sign In</a></li>
-                {%else%}
-                <li><a href="{{url_for('auth.logout')}}">Logout</a></li>
-                {%endif%}
-        
+                    {%else%}
+                    <li><a href="{{url_for('auth.logout')}}">Logout</a></li>
+                    {%endif%}
+
                     <li><a href="#popular-places">Popular Products</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -61,7 +61,7 @@
         <div class="slider">
             <ul class="slides">
                 <li>
-                    <img src="{{url_for('main.static', filename='img/09.jpg')}}" />
+                    <img src="{{url_for('main.static', filename='img/images(1).jpg')}}" />
 
                     <!-- random image -->
                     <div class="caption left-align">
@@ -97,13 +97,12 @@
     <!-- Popular Places -->
     <div id="popular-places" class="scrollspy">
         <div class="container">
-            <h4 class="center"><span class="teal-text">Popular</span> Products</h4>
+            <h4 class="center"><span class="teal-text">Popular</span> Farms</h4>
             <div class="input-field select center">
                 <select class="filter-select">
-            <option value="" disabled selected>Select Category</option>
-            <option value="vegetable">Vegetables</option>
-            <option value="fish">Fishes</option>
-            <option value="fruit">Fruits</option>
+            <option value="vegetable">Roli's Farm</option>
+            <option value="fish">Kali's Farm</option>
+            <option value="fruit">Jamal's Farm</option>
           </select>
             </div>
             <div class="row veg produce current">
@@ -112,10 +111,10 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="{{url_for('main.static', filename='img/Veg 01.jpg')}}" alt="Farm One" />
-                                <span class="card-title black-text">Dry Vegetables</span>
                             </div>
                             <div class="card-content">
-                                <strong class="bold-text">Price:</strong> $150.00
+                                <p class="item">Dry Vegetables</p>
+                                <p><strong class="bold-text">Price:</strong> $150.00</p>
                             </div>
                         </div>
                     </div>
@@ -125,10 +124,10 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="{{url_for('main.static', filename='img/Veg 02.jpg')}}" alt="Farm Two" />
-                                <span class="card-title black-text">Wet Vegetables</span>
                             </div>
                             <div class="card-content">
-                                <strong class="bold-text">Price:</strong> $100.00
+                                <p class="item">Wet Vegetables</p>
+                                <p><strong class="bold-text">Price:</strong> $100.00</p>
                             </div>
                         </div>
                     </div>
@@ -138,10 +137,10 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="{{url_for('main.static', filename='img/Veg 03.jpg')}}" alt="Farm Three" />
-                                <span class="card-title black-text">Seasoned Vegetables</span>
                             </div>
                             <div class="card-content">
-                                <strong class="bold-text">Price:</strong> $90.00
+                                <p class="item">Seasoned Vegetables</p>
+                                <p><strong class="bold-text">Price:</strong> $80.00</p>
                             </div>
                         </div>
                     </div>
@@ -153,10 +152,10 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="{{url_for('main.static', filename='img/Fish 01.jpg')}}" alt="Farm One" />
-                                <span class="card-title white-text">Dry Fish</span>
                             </div>
                             <div class="card-content">
-                                <strong class="bold-text">Price:</strong> $150.00
+                                <p class="item">Dry Fish</p>
+                                <p><strong class="bold-text">Price:</strong> $150.00</p>
                             </div>
                         </div>
                     </div>
@@ -166,10 +165,10 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="{{url_for('main.static', filename='img/Fish 02.jpg')}}" alt="Farm Two" />
-                                <span class="card-title white-text">Smoked Fish</span>
                             </div>
                             <div class="card-content">
-                                <strong class="bold-text">Price:</strong> $100.00
+                                <p class="item">Fresh Fish</p>
+                                <p><strong class="bold-text">Price:</strong> $100.00</p>
                             </div>
                         </div>
                     </div>
@@ -179,10 +178,10 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="{{url_for('main.static', filename='img/Fish 03.jpg')}}" alt="Farm Three" />
-                                <span class="card-title white-text">Packaged Fish</span>
                             </div>
                             <div class="card-content">
-                                <strong class="bold-text">Price:</strong> $70.00
+                                <p class="item">Packaged Fish</p>
+                                <p><strong class="bold-text">Price:</strong> $70.00</p>
                             </div>
                         </div>
                     </div>
@@ -194,10 +193,10 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="{{url_for('main.static', filename='img/Fruits 01.jpg')}}" alt="Farm One" />
-                                <span class="card-title black-text">Fresh Fruits</span>
                             </div>
                             <div class="card-content">
-                                <strong class="bold-text">Price:</strong> $150.00
+                                <p class="item">Fresh Fruits</p>
+                                <p><strong class="bold-text">Price:</strong> $150.00</p>
                             </div>
                         </div>
                     </div>
@@ -207,10 +206,10 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="{{url_for('main.static', filename='img/Fruits 02.jpg')}}" alt="Farm Two" />
-                                <span class="card-title black-text">Packaged Fruits</span>
                             </div>
                             <div class="card-content">
-                                <strong class="bold-text">Price:</strong> $200.00
+                                <p class="item">Packaged Fruits</p>
+                                <p><strong class="bold-text">Price:</strong> $200.00</p>
                             </div>
                         </div>
                     </div>
@@ -220,10 +219,10 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="{{url_for('main.static', filename='img/Fruits 03.jpg')}}" alt="Farm Three" />
-                                <span class="card-title black-text">Carted Fruits</span>
                             </div>
                             <div class="card-content">
-                                <strong class="bold-text">Price:</strong> $100.00
+                                <p class="item">Carted Fruits</p>
+                                <p><strong class="bold-text">Price:</strong> $100.00</p>
                             </div>
                         </div>
                     </div>
@@ -264,25 +263,25 @@
                         <img src="{{url_for('main.static', filename='img/11.jpg')}}" alt="One" class="materialboxed responsive-img" />
                     </div>
                     <div class="col s12 m3">
-                        <img src="{{url_for('main.static', filename='img/02.jpg')}}" alt="One" class="materialboxed responsive-img" />
+                        <img src="{{url_for('main.static', filename='img/02.jpg')}}" alt="Two" class="materialboxed responsive-img" />
                     </div>
                     <div class="col s12 m3">
-                        <img src="{{url_for('main.static', filename='img/03.jpg')}}" alt="One" class="materialboxed responsive-img" />
+                        <img src="{{url_for('main.static', filename='img/03.jpg')}}" alt="Three" class="materialboxed responsive-img" />
                     </div>
                     <div class="col s12 m3">
-                        <img src="{{url_for('main.static', filename='img/04.jpg')}}" alt="One" class="materialboxed responsive-img" />
+                        <img src="{{url_for('main.static', filename='img/04.jpg')}}" alt="Four" class="materialboxed responsive-img" />
                     </div>
                     <div class="col s12 m3">
-                        <img src="{{url_for('main.static', filename='img/05.jpg')}}" alt="One" class="materialboxed responsive-img" />
+                        <img src="{{url_for('main.static', filename='img/05.jpg')}}" alt="Five" class="materialboxed responsive-img" />
                     </div>
                     <div class="col s12 m3">
-                        <img src="{{url_for('main.static', filename='img/06.jpg')}}" alt="One" class="materialboxed responsive-img" />
+                        <img src="{{url_for('main.static', filename='img/06.jpg')}}" alt="Six" class="materialboxed responsive-img" />
                     </div>
                     <div class="col s12 m3">
-                        <img src="{{url_for('main.static', filename='img/08.jpg')}}" alt="One" class="materialboxed responsive-img" />
+                        <img src="{{url_for('main.static', filename='img/08.jpg')}}" alt="Seven" class="materialboxed responsive-img" />
                     </div>
                     <div class="col s12 m3">
-                        <img src="{{url_for('main.static', filename='img/12.jpg')}}" alt="One" class="materialboxed responsive-img" />
+                        <img src="{{url_for('main.static', filename='img/12.jpg')}}" alt="Eight" class="materialboxed responsive-img" />
                     </div>
                 </div>
             </div>
@@ -312,7 +311,13 @@
                 </div>
                 <div class="col s12 m6">
                     <div class="card-panel grey lighten-3">
-                        <h5>Register here to have your goods displayed</h5>
+                        <h6>Register here to have your goods displayed</h6>
+                        <div class="input-field">
+                            <select>
+                  <option value="farmer">Farmer</option>
+                  <option value="seller">Seller</option>
+                </select>
+                        </div>
                         <div class="input-field">
                             <input type="text" placeholder="Name" />
                         </div>

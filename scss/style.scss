@@ -206,4 +206,28 @@ button:hover {
     display: none;
 }
 
+.profile {
+    margin: 3rem auto;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .det-01 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    & h6 {
+        text-transform: uppercase;
+        padding-left: 0.5rem;
+    }
+}
+
+hr {
+    margin: 1rem 0;
+}
+
 @import 'media';

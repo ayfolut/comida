@@ -1,0 +1,249 @@
+body {
+  font-family: "Poppins", san-serif;
+  font-size: 13px;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.hide-on-sm {
+  display: none;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5rem 0 2rem;
+}
+
+.logo h1 {
+  font-size: 50px;
+  font-family: 'Big Shoulders Stencil Text', cursive;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+form label {
+  display: block;
+  margin: 3rem 0 1rem;
+}
+
+form input {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: solid 1px gray;
+  outline: none;
+  width: 100%;
+}
+
+button {
+  display: block;
+  border: none;
+  outline: none;
+  margin: 2rem 0;
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 7px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #48c0c0;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.sign-in {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-animation: opacity 0.5s;
+          animation: opacity 0.5s;
+  width: 100%;
+  margin: auto;
+}
+
+.sign-in h2 {
+  margin: 2rem 0 2.5rem;
+}
+
+.sign-up {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  -webkit-animation: opacity 0.5s;
+          animation: opacity 0.5s;
+}
+
+@-webkit-keyframes opacity {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sign,
+.signUp {
+  color: #48c0c0;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.sign:hover,
+.signUp:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    height: 100vh;
+  }
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .hide-on-sm {
+    display: block;
+  }
+  .signing {
+    width: 60vw;
+  }
+  .signing button {
+    text-transform: uppercase;
+    padding: 1.3rem;
+    width: 40%;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .logo {
+    display: none;
+  }
+  .farm {
+    background: url("../img/images(1).jpg") no-repeat center center/cover;
+    width: 40vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    color: #fff;
+  }
+  .farm h3 {
+    font-size: 40px;
+  }
+  .farm p {
+    font-size: 20px;
+  }
+  .farm .btn-create {
+    text-transform: uppercase;
+    padding: 1.5rem;
+    width: 80%;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+  .no-acct {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .signing button {
+    width: 30%;
+  }
+  .farm h3 {
+    font-size: 50px;
+  }
+  .farm p {
+    font-size: 20px;
+  }
+  .farm .btn-create {
+    text-transform: uppercase;
+    padding: 1.5rem;
+    width: 60%;
+    font-size: 20px;
+    letter-spacing: 3px;
+  }
+}

@@ -4,61 +4,335 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="./css/style.css" />
-    <!-- Font -->
+    <title>Comida | Farmers meet Sellers</title>
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&display=swap" rel="stylesheet" />
-    <title>Comida - Farmer Meet Seller</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Materialize -->
+    <link rel="stylesheet" href="./static/materialize/css/materialize.min.css" />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./static/fontawesome-free-5.12.0-web/css/all.css" />
 </head>
 
 <body>
-    <!-- Login Page -->
-    <!-- Farm -->
-    <div class="container">
-        <div class="farm hide-on-sm">
-            <h3>Try for free today!</h3>
-            <p>No Credit Card Required. 30 Day Free Trial.</p>
-            <button class="btn btn-create">Create Account</button>
-        </div>
-        <div class="signing">
-            <div class="logo">
-                <h1>C</h1>
-            </div>
-            <div class="sign-in">
-                <h2>Sign In</h2>
-                <form class="form-01">
-                    <label for="mail">E-mail</label>
-                    <input type="mail" name="mail" />
-                    <label for="password">Password</label>
-                    <input type="password" name="password" />
-                    <button type="submit" class="btn btn-sign-in">Sign In</button>
-                </form>
-                <div class="no-acct">
-                    <small>Don't have an account?</small>
-                    <small class="sign">Sign Up </small>
+    <!-- Header & Nav -->
+    <div class="navbar-fixed">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo">Comida</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#showcase">Home</a></li>
+                    <li><a href="login.html">Sign Up / Sign In</a></li>
+                    <li><a href="#popular-places">Popular Products</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    </ul>
                 </div>
             </div>
-            <div class="sign-up">
-                <h1>Sign Up</h1>
-                <form class="form-02">
-                    <label for="name">Name</label>
-                    <input type="name" name="name" />
-                    <label for="mail">E-mail</label>
-                    <input type="mail" name="mail" />
-                    <label for="password">Password</label>
-                    <input type="password" name="password" />
-                    <button type="submit" class="btn btn-sign-up">Sign Up</button>
-                </form>
-                <div class="no-acct">
-                    <small>Already have an account?</small>
-                    <small class="signUp">Sign In</small>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="#showcase">Home</a></li>
+        <li><a href="login.html">Sign Up / Sign In</a></li>
+        <li><a href="#popular-places">Popular Products</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Showcase: Carousel -->
+    <div id="showcase" class="scrollspy">
+        <div class="slider">
+            <ul class="slides">
+                <li>
+                    <img src="./static/img/09.jpg" />
+
+                    <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Welcome to Comida</h3>
+                        <p class="hide-on-med-and-down">
+                            A platfrom that reduces the supply chain of agricultural products.
+                        </p>
+                        <a href="#popular-places" class="btn">Shop Now</a>
+                    </div>
+                </li>
+                <li>
+                    <img src="./static/img/01.jpg" />
+                    <!-- random image -->
+                    <div class="caption right-align">
+                        <h3>We give you the best price</h3>
+                        <p class="hide-on-med-and-down">Your trusted Middleman.</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="./static/img/07.jpg" />
+                    <!-- random image -->
+                    <div class="caption left-align">
+                        <h3>Shop with us...</h3>
+                        <p class="hide-on-med-and-down">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, amet.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Popular Places -->
+    <div id="popular-places" class="scrollspy">
+        <div class="container">
+            <h4 class="center"><span class="teal-text">Popular</span> Products</h4>
+            <div class="input-field select center">
+                <select class="filter-select">
+            <option value="" disabled selected>Select Category</option>
+            <option value="vegetable">Vegetables</option>
+            <option value="fish">Fishes</option>
+            <option value="fruit">Fruits</option>
+          </select>
+            </div>
+            <div class="row veg produce current">
+                <a href="pay.html">
+                    <div class="col s12 m4 prod-1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./static/img/Veg 01.jpg" alt="Farm One" />
+                                <span class="card-title black-text">Dry Vegetables/span>
+                            </div>
+                            <div class="card-content">
+                                <strong class="bold-text">Price:</strong> $150.00
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="col s12 m4 prod-1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./static/img/Veg 02.jpg" alt="Farm Two" />
+                                <span class="card-title black-text">Wet Vegetables</span>
+                            </div>
+                            <div class="card-content">
+                                <strong class="bold-text">Price:</strong> $100.00
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="col s12 m4 prod-1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./static/img/Veg 03.jpg" alt="Farm Three" />
+                                <span class="card-title black-text">Seasoned Vegetables</span>
+                            </div>
+                            <div class="card-content">
+                                <strong class="bold-text">Price:</strong> $90.00
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row fish produce">
+                <a href="#">
+                    <div class="col s12 m4 prod-1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./static/img/Fish 01.jpg" alt="Farm One" />
+                                <span class="card-title white-text">Dry Fish</span>
+                            </div>
+                            <div class="card-content">
+                                <strong class="bold-text">Price:</strong> $150.00
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="col s12 m4 prod-1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./static/img/Fish 02.jpg" alt="Farm Two" />
+                                <span class="card-title white-text">Smoked Fish</span>
+                            </div>
+                            <div class="card-content">
+                                <strong class="bold-text">Price:</strong> $100.00
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="col s12 m4 prod-1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./static/img/Fish 03.jpg" alt="Farm Three" />
+                                <span class="card-title white-text">Packaged Fish</span>
+                            </div>
+                            <div class="card-content">
+                                <strong class="bold-text">Price:</strong> $70.00
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="row fruits produce">
+                <a href="#">
+                    <div class="col s12 m4 prod-1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./static/img/Fruits 01.jpg" alt="Farm One" />
+                                <span class="card-title black-text">Fresh Fruits</span>
+                            </div>
+                            <div class="card-content">
+                                <strong class="bold-text">Price:</strong> $150.00
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="col s12 m4 prod-1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./static/img/Fruits 02.jpg" alt="Farm Two" />
+                                <span class="card-title black-text">Packaged Fruits</span>
+                            </div>
+                            <div class="card-content">
+                                <strong class="bold-text">Price:</strong> $200.00
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="col s12 m4 prod-1">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./static/img/Fruits 03.jpg" alt="Farm Three" />
+                                <span class="card-title black-text">Carted Fruits</span>
+                            </div>
+                            <div class="card-content">
+                                <strong class="bold-text">Price:</strong> $100.00
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Follow -->
+    <div class="follow center teal white-text">
+        <div class="container">
+            <h3>Follow Comida</h3>
+            <p>Follow us on social media for special offers</p>
+            <a href="" class="white-text">
+                <i class="fab fa-facebook fa-3x"></i>
+            </a>
+            <a href="" class="white-text">
+                <i class="fab fa-twitter fa-3x"></i>
+            </a>
+            <a href="" class="white-text">
+                <i class="fab fa-google-plus fa-3x"></i>
+            </a>
+            <a href="" class="white-text">
+                <i class="fab fa-pinterest fa-3x"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div id="gallery" class="scrollspy">
+        <div class="container">
+            <div class="center">
+                <h4 class="black-text">
+                    <span class="teal-text">Product</span> Gallery
+                </h4>
+                <div class="row">
+                    <div class="col s12 m3">
+                        <img src="./static/img/11.jpg" alt="One" class="materialboxed responsive-img" />
+                    </div>
+                    <div class="col s12 m3">
+                        <img src="./static/img/02.jpg" alt="One" class="materialboxed responsive-img" />
+                    </div>
+                    <div class="col s12 m3">
+                        <img src="./static/img/03.jpg" alt="One" class="materialboxed responsive-img" />
+                    </div>
+                    <div class="col s12 m3">
+                        <img src="./static/img/04.jpg" alt="One" class="materialboxed responsive-img" />
+                    </div>
+                    <div class="col s12 m3">
+                        <img src="./static/img/05.jpg" alt="One" class="materialboxed responsive-img" />
+                    </div>
+                    <div class="col s12 m3">
+                        <img src="./static/img/06.jpg" alt="One" class="materialboxed responsive-img" />
+                    </div>
+                    <div class="col s12 m3">
+                        <img src="./static/img/08.jpg" alt="One" class="materialboxed responsive-img" />
+                    </div>
+                    <div class="col s12 m3">
+                        <img src="./static/img/12.jpg" alt="One" class="materialboxed responsive-img" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="./js/main.js"></script>
+
+    <!-- Contact -->
+    <div id="contact" class="scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <div class="card-panel teal white-text center">
+                        <i class="material-icons medium">email</i>
+                        <h5>Contact Us For More Details</h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit, vel cupiditate dolorum nobis quaerat expedita nesciunt aliquam nostrum! Dolore.
+                        </p>
+                    </div>
+                    <ul class="collection with-header">
+                        <li class="collection-header">
+                            <h4>Location</h4>
+                        </li>
+                        <li class="collection-item">Comida</li>
+                        <li class="collection-item">234 Morinho Drive, Suite A3</li>
+                        <li class="collection-item">Lagos Island, Lagos</li>
+                    </ul>
+                </div>
+                <div class="col s12 m6">
+                    <div class="card-panel grey lighten-3">
+                        <h5>We'd like your review</h5>
+                        <div class="input-field">
+                            <input type="text" placeholder="Name" />
+                        </div>
+                        <div class="input-field">
+                            <input type="email" placeholder="Email" class="validate" />
+                        </div>
+                        <div class="input-field">
+                            <input type="text" placeholder="Phone" />
+                        </div>
+                        <div class="input-field">
+                            <textarea class="materialize-textarea" placeholder="Enter Message"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" class="btn" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer teal darken-2 white-text center">
+        <div class="container">
+            <p>Comida &copy; 2020</p>
+        </div>
+    </footer>
+
+    <script src="./static/jquery/jquery-3.4.1.js"></script>
+    <script src="./static/materialize/js/materialize.min.js"></script>
+    <script src="./static/js/select.js"></script>
 </body>
 
 </html>

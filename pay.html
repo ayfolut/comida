@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comida | Farmers meet Sellers</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&display=swap" rel="stylesheet" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Materialize -->
+    <link rel="stylesheet" href="./static/materialize/css/materialize.min.css" />
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./static/fontawesome-free-5.12.0-web/css/all.css" />
+</head>
+
+<body>
+    <!-- Header & Nav -->
+    <div class="navbar-fixed">
+        <nav class="teal">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="index.html" class="brand-logo">Comida</a>
+                    <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Home</a></li>
+                    <li><a href="login.html">Sign Up / Sign In</a></li>
+                    <li><a href="#popular-places">Popular Products</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Sign Up / Sign In</a></li>
+        <li><a href="#popular-places">Popular Products</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Payment -->
+    <div class="chevron">
+        <a href="index.html"><i class="fa fa-chevron-left"></i> Go Home</a>
+    </div>
+    <div class="row pay">
+        <div class="col s12">
+            <div class="col s12 m4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="./static/img/Veg 01.jpg" alt="Farm Two" />
+                        <span class="card-title black-text">Dry Vegetables</span>
+                    </div>
+                    <div class="card-content">
+                        <strong class="bold-text">Price:</strong> $150.00
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="checkout">
+                    <h5>Checkout</h5>
+                    <div class="input-field">
+                        <input type="text" placeholder="Credit Card Number" />
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Card Handler's Name" />
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="input-field">
+                                <input type="text" placeholder="Expiry Date" />
+                            </div>
+                            <div class="input-field">
+                                <input type="text" placeholder="CVV" />
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit" value="Proceed to Pay" class="btn" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./static/jquery/jquery-3.4.1.js"></script>
+    <script src="./static/materialize/js/materialize.min.js"></script>
+
+    <script>
+        // Sidenav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        // Slider
+        $(document).ready(function() {
+            $('.slider').slider({
+                indicators: false,
+                interval: 3000,
+            });
+        });
+
+        // Material Boxed
+        const mb = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(mb, {});
+
+        // ScrollSpy
+        const ss = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(ss, {});
+
+        // Select
+        $(document).ready(function() {
+            $('select').formSelect();
+        });
+    </script>
+</body>
+
+</html>

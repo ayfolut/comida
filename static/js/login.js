@@ -1,7 +1,7 @@
 // Variales
 const sign = document.querySelector('.sign');
 const signU = document.querySelector('.signUp');
-const create = document.querySelector('.btn-create');
+const toggle = document.querySelector('.toggle');
 const signUp = document.querySelector('.sign-up');
 const signIn = document.querySelector('.sign-in');
 const form01 = document.querySelector('.form-01');
@@ -17,14 +17,13 @@ signU.addEventListener('click', () => {
     signIn.style.display = 'flex';
 });
 
-create.addEventListener('click', () => {
-    signUp.style.display = 'flex';
-    signIn.style.display = 'none';
-    create.innerText = 'SIGN IN';
+toggle.addEventListener('click', () => {
+    signUp.classList.toggle('sign-in-out');
+    signIn.classList.toggle('sign-in-in');
+    toggle.classList.toggle('display');
 });
 
 form01.addEventListener('submit', (e) => {
-    e.preventDefault();
     const input = document.getElementsByTagName('input');
     input.value = '';
     for (let i = 0; i < input.length; ++i) {
@@ -36,7 +35,6 @@ form01.addEventListener('submit', (e) => {
     }
 });
 form02.addEventListener('submit', (e) => {
-    e.preventDefault();
     // Regular Expression (regex)
     const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const regex = new RegExp(mailformat);

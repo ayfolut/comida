@@ -1,1 +1,76 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="{{url_for('main.static', filename='css/style.css')}}" />
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@500&display=swap" rel="stylesheet" />
+    <title>Comida - Farmer Meet Seller</title>
+</head>
+
+<body>
+    <!-- Login Page -->
+    <!-- Farm -->
+    <div class="container">
+        <div class="farm hide-on-sm">
+            <h3>Try for free today!</h3>
+            <p>No Credit Card Required. 30 Day Free Trial.</p>
+            <button class="btn btn-create">Create Account</button>
+        </div>
+        <div class="signing">
+            <div class="logo">
+                <h1>C</h1>
+            </div>
+            <div class="sign-in">
+                {% with messages=get_flashed_messages()%}
+				{% if messages %}
+				<ul>
+					{% for message in messages %}
+					<li>{{ message }}</li>
+					{% endfor %}
+				</ul>
+				{% endif %}
+				{% endwith %}
+
+                <h2>Sign In</h2>
+                <form class="form-01" action="{{url_for('auth.login')}}" method="post"  novalidate>
+                    {{login_form.csrf_token(id ="login")}}
+                    <label for="mail">E-mail</label>
+                    <input type="mail" name="login_email" />
+                    <label for="password">Password</label>
+                    <input type="password" name="login_password_b"/>
+                    <button class="btn btn-sign-in" name="login_submit_b" type="submit">Sign In</button>
+                </form>
+                <div class="no-acct">
+                    <small>Don't have an account?</small>
+                    <small class="sign">Sign Up </small>
+                </div>
+            </div>
+            <div class="sign-up">
+                <h1>Sign Up</h1>
+                <form class="form-02" method="post" action="{{url_for('auth.register')}}">
+                    {{registration_form.csrf_token(id = "register")}}
+                    <label for="name">Name</label>
+                    <input type="name" name="username" />
+                    <label for="mail">E-mail</label>
+                    <input type="mail" name="email" />
+                    <label for="password">Password</label>
+                    <input type="password" name="password_b" />
+                    <button type="submit" class="btn btn-sign-up" name="submit_b" >Sign Up</button>
+                </form>
+                <div class="no-acct">
+                    <small>Already have an account?</small>
+                    <small class="signUp">Sign In</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{{url_for('main.static', filename='js/main.js')}}"></script>
+</body>
+
+</html>

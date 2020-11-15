@@ -24,7 +24,7 @@ create.addEventListener('click', () => {
 });
 
 form01.addEventListener('submit', (e) => {
-    e.preventDefault();
+    
     const input = document.getElementsByTagName('input');
     input.value = '';
     for (let i = 0; i < input.length; ++i) {
@@ -36,7 +36,7 @@ form01.addEventListener('submit', (e) => {
     }
 });
 form02.addEventListener('submit', (e) => {
-    e.preventDefault();
+    
     // Regular Expression (regex)
     const mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     const regex = new RegExp(mailformat);

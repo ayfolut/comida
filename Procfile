@@ -1,1 +1,1 @@
-web: gunicorn -b :$PORT comida:app
+web: gunicorn --bind 0.0.0.0:$PORT comida:app

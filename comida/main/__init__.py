@@ -7,4 +7,3 @@ bp = Blueprint('main', __name__, template_folder='templates', static_folder='sta
 
 from comida.main import routes
 
-mnns

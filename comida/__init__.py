@@ -17,7 +17,6 @@ def create_app(config_class='default'):
     db.init_app(app)
     migrate.init_app(app)
 
-
     """ blueprint registrations"""
     from comida.auth import bp as auth_bp
     app.register_blueprint(auth_bp, url_prefix='/auth')
@@ -31,5 +30,8 @@ def create_app(config_class='default'):
 
 
     return app
+
+
+app = create_app('production')
 
     

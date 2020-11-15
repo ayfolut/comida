@@ -1,1 +1,1 @@
-web: gunicorn comida:app
+web: gunicorn comida:comida

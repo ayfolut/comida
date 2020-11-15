@@ -41,6 +41,6 @@ def create_app(config_class='default'):
     return app
 
 
-#app = create_app('production')
+app = create_app('production')
 
     

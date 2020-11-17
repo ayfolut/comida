@@ -1,4 +1,5 @@
 import os
+import psycopg2
 
 
 basedir = os.path.abspath(os.path.dirname(__file__))
@@ -30,6 +31,7 @@ class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
         'sqlite:///' + os.path.join(basedir, 'data.sqlite')
 
+    DATABASE_URL = os.environ['DATABASE_URL']
 
 config = {
     'development':DevelopmentConfig,

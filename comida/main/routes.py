@@ -6,8 +6,9 @@ from flask_login import login_required
 
 
 
-@login_required
 @root.route('/')
 @root.route('/home')
+@login_required
+
 def index():
     return render_template ('index.html')

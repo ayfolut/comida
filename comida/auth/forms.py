@@ -3,6 +3,7 @@ from wtforms import StringField, PasswordField, TextAreaField, IntegerField, Dat
 from wtforms.validators import DataRequired, URL, Email, EqualTo, ValidationError
 from ..models import User
 
+
 class LoginForm(FlaskForm):
     login_email = StringField('Email', validators=[DataRequired()])
     login_password_b = PasswordField('Password', validators=[DataRequired()])
@@ -11,8 +12,8 @@ class LoginForm(FlaskForm):
 class RegistrationForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
     email = StringField('Email', validators=[DataRequired(), Email()])
-    password_b = PasswordField('Password', validators=[DataRequired()])
-    password_b2 = PasswordField('Repeat password', validators=[DataRequired(), EqualTo('password_b')])
+    password1 = PasswordField('Password', validators=[DataRequired()])
+    password2 = PasswordField('Repeat password', validators=[DataRequired(), EqualTo('password1', message="Both passwords have to be the same")])
     submit_b = SubmitField('Register')
 
     def validate_username(self, username):
@@ -23,3 +24,4 @@ class RegistrationForm(FlaskForm):
         user = User.query.filter_by(email=email.data).first()
         if user is not None:
             raise ValidationError('Please use a different email address')
+    

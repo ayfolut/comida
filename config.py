@@ -5,7 +5,7 @@ import psycopg2
 basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
-    SECRET_KEY = os.environ.get('SECRET KEY') or 'you cannot know'
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'you cannot know'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     @staticmethod
     def init_app(app):
@@ -30,7 +30,7 @@ class TestingConfig(Config):
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
 
-    DATABASE_URL = os.environ['DATABASE_URL']
+    #DATABASE_URL = os.environ['DATABASE_URL']
 
 config = {
     'development':DevelopmentConfig,

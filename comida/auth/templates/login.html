@@ -52,15 +52,32 @@
                 </div>
             </div>
             <div class="sign-up">
+
                 <h1>Sign Up</h1>
                 <form class="form-02" method="post" action="{{url_for('auth.register')}}">
                     {{registration_form.csrf_token(id = "register")}}
                     <label for="name">Name</label>
                     <input type="name" name="username" />
+                    {% for error in registration_form.username.errors %}
+                    <span style="color: rebeccapurple;">{{error}}</span>
+                    {% endfor %}
+
                     <label for="mail">E-mail</label>
                     <input type="mail" name="email" />
+                    {% for error in registration_form.email.errors %}
+                    <span style="color: rebeccapurple;">{{error}}</span>
+                    {% endfor %}
+
                     <label for="password">Password</label>
-                    <input type="password" name="password_b" />
+                    <input type="password" name="password1" />
+
+                    <label for="password">Input Password Again</label>
+                    <input type="password" name="password2" />
+                    {% for error in registration_form.password2.errors %}
+                    <span style="color: rebeccapurple;">{{error}}</span>
+                    {% endfor %}
+
+
                     <button type="submit" class="btn btn-sign-up" name="submit_b" >Sign Up</button>
                 </form>
                 <div class="no-acct">

@@ -1,5 +1,5 @@
 from . import bp
-from flask import redirect, render_template, url_for,request, flash, current_app,  session, request
+from flask import redirect, render_template, url_for,request,  flash, current_app,  session, request
 from .forms import LoginForm , RegistrationForm
 from ..models import User, db
 from flask_login import login_user, logout_user, current_user
@@ -33,14 +33,14 @@ def register():
         return redirect(url_for('index'))
     registration_form = RegistrationForm()
     login_form =LoginForm()
-    if request.method == 'POST':
-        user = User(username=registration_form.username.data, email = registration_form.email.data)
-        user.set_password(registration_form.password_b.data)
+    if registration_form.validate_on_submit():
+        user = User(username=registration_form.username.data, email=registration_form.email.data)
+        user.set_password(registration_form.password2.data)
         db.session.add(user)
         db.session.commit()
-        flash('Congartulations, You have been registered')
-        print('yay')
+        flash('Congratulations, You have been registered')
         return redirect(url_for('auth.login'))
+
     else:
         print('nojjjt')
 

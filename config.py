@@ -18,6 +18,10 @@ class DevelopmentConfig(Config):
     DEBUG = True
     SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or \
     'sqlite:///' + os.path.join(basedir, 'data-dev.sqlite')
+    MAIL_SERVER = 'localhost'
+    MAIL_PORT=8025
+    ADMINS = 'sarahunoke@gmail.com'
+    
 
 class TestingConfig(Config):
     TESTING = True
@@ -29,6 +33,12 @@ class TestingConfig(Config):
 
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+    MAIL_SERVER = os.environ.get('MAIL_SERVER')
+    MAIL_PORT = os.environ.get('MAIL_PORT')
+    MAIL_USE_TLS = 1
+    MAIL_USERNAME  = os.environ.get('MAIL_USERNAME')
+    MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
+    COMIDA_ADMIN = os.environ.get('COMIDA_ADMIN')
 
     #DATABASE_URL = os.environ['DATABASE_URL']
 

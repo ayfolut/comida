@@ -3,6 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from config import config
 from flask_login import LoginManager
 from flask_migrate import Migrate
+from flask_mail import Mail
 
 
 db = SQLAlchemy()
@@ -10,6 +11,7 @@ login = LoginManager()
 migrate = Migrate()
 login.session_protection = 'strong'
 login.login_view = 'auth.login'
+mail = Mail()
 
 
 
@@ -21,6 +23,7 @@ def create_app(config_class='default'):
     from . import models
     migrate.init_app(app, db)
     login.init_app(app)
+    mail.init_app(app)
 
     """ blueprint registrations"""
     from comida.auth import bp as auth_bp

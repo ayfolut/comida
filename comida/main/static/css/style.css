@@ -279,6 +279,47 @@ button:hover {
   display: none;
 }
 
+.profile {
+  margin: 3rem auto;
+}
+
+.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.details .det-01 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.details h6 {
+  text-transform: uppercase;
+  padding-left: 0.5rem;
+}
+
+hr {
+  margin: 1rem 0;
+}
+
 @media screen and (min-width: 600px) {
   #gallery .responsive-img {
     margin-bottom: 0.5rem;
@@ -345,7 +386,7 @@ button:hover {
     display: none;
   }
   .farm {
-    background: url("../static/img/images(3).jpg") no-repeat center center/cover;
+    background: url("../img/images(3).jpg") no-repeat center center/cover;
     width: 40vw;
     height: 100vh;
     display: -webkit-box;

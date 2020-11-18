@@ -25,12 +25,17 @@
         <nav class="teal">
             <div class="container">
                 <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo">Comida</a>
+                    <a href="{{url_for('root.index')}}" class="brand-logo">Comida</a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a
             >
             <ul class="right hide-on-med-and-down">
               <li><a href="#showcase">Home</a></li>
+              {%if current_user.is_anonymous%}
                     <li><a href="{{url_for('auth.login')}}">Sign Up / Sign In</a></li>
+                {%else%}
+                <li><a href="{{url_for('auth.logout')}}">Logout</a></li>
+                {%endif%}
+        
                     <li><a href="#popular-places">Popular Products</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -41,15 +46,14 @@
     </div>
     <ul class="sidenav" id="mobile-nav">
         <li><a href="#showcase">Home</a></li>
+        {%if current_user.is_anonymous%}
+        <li><a href="{{url_for('auth.login')}}">Sign Up / Sign In</a></li>
+        {%else%}
+        <li><a href="{{url_for('auth.logout')}}">Logout</a></li>
+        {%endif%}
         <li><a href="#popular-places">Popular Products</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#contact">Contact</a></li>
-        {%if current_user%}
-        <li><a href="{{url_for('auth.logout')}}">Logout</a></li>
-        {%else%}
-        <li><a href="{{url_for('auth.login')}}">Sign Up / Sign In</a></li>
-        {%endif%}
-
     </ul>
 
     <!-- Showcase: Carousel -->
@@ -103,7 +107,7 @@
           </select>
             </div>
             <div class="row veg produce current">
-                <a href="pay.html">
+                <a href="{{url_for('root.pay')}}">
                     <div class="col s12 m4 prod-1">
                         <div class="card">
                             <div class="card-image">
@@ -308,7 +312,7 @@
                 </div>
                 <div class="col s12 m6">
                     <div class="card-panel grey lighten-3">
-                        <h5>We'd like your review</h5>
+                        <h5>Register here to have your goods displayed</h5>
                         <div class="input-field">
                             <input type="text" placeholder="Name" />
                         </div>
@@ -337,6 +341,7 @@
 
     <script src="{{url_for('main.static', filename='jquery/jquery-3.4.1.js')}}"></script>
     <script src="{{url_for('main.static', filename='materialize/js/materialize.min.js')}}"></script>
+    <script src="{{url_for('main.static', filename='js/main.js')}}"></script>
     <script src="{{url_for('main.static', filename='js/select.js')}}"></script>
 </body>
 

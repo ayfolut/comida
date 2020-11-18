@@ -4,7 +4,6 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')
-app.app_context().push
 
 @app.shell_context_processor
 def make_shell_context():

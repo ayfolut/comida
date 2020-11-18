@@ -40,7 +40,6 @@ class ProductionConfig(Config):
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
     COMIDA_ADMIN = os.environ.get('COMIDA_ADMIN')
 
-    #DATABASE_URL = os.environ['DATABASE_URL']
 
 config = {
     'development':DevelopmentConfig,

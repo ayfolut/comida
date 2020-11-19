@@ -409,7 +409,7 @@ hr {
         display: none;
     }
     .farm {
-        background: url('../static/img/images(3).jpg') no-repeat center center/cover;
+        background: url('../img/images(3).jpg') no-repeat center center/cover;
         width: 40vw;
         height: 100vh;
         display: -webkit-box;

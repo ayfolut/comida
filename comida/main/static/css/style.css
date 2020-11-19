@@ -11,6 +11,15 @@
     display: none;
 }
 
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Poppins', san-serif;
     font-size: 13px;
@@ -341,6 +350,10 @@ hr {
 .pass a {
     color: #009688;
     text-decoration: none;
+}
+
+.message {
+    color: #009688;
 }
 
 @media screen and (min-width: 600px) {

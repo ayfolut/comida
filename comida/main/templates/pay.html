@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Comida | Farmers meet Sellers</title>
+    <title>Comida | Checkout</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -17,6 +17,8 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{url_for('main.static', filename='fontawesome-free-5.12.0-web/css/all.css')}}" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{url_for('main.static', filename='img/favicon.ico')}}" type="image/x-icon" />
 </head>
 
 <body>
@@ -72,9 +74,11 @@
                 </div>
                 <div class="col s12 m6">
                     <div class="checkout">
+                        <img src="{{url_for('main.static', filename='img/card 01.jpg')}}" class="responsive-img produce mastercard current" alt="" />
+                        <img src="{{url_for('main.static', filename='img/card 02.jpg')}}" class="responsive-img produce visa" alt="" />
+                        <img src="{{url_for('main.static', filename='img/card 03.jpg')}}" class="responsive-img produce verve" alt="" />
                         <div class="input-field">
                             <select>
-                  <option value="" disabled selected>Add Card</option>
                   <option value="mastercard">Mastercard</option>
                   <option value="visa">Visa</option>
                   <option value="verve">Verve</option>
@@ -106,6 +110,7 @@
     <script src="{{url_for('main.static', filename='jquery/jquery-3.4.1.js')}}"></script>
     <script src="{{url_for('main.static', filename='materialize/js/materialize.min.js')}}"></script>
     <script src="{{url_for('main.static', filename='js/main.js')}}"></script>
+    <script src="{{url_for('main.static', filename='js/pay.js')}}"></script>
 </body>
 
 </html>

@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="{{url_for('main.static', filename='css/style.css')}}" />
     <!-- Font Awesome -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <title>Comida - Farmer Meet Seller</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{{url_for('main.static', filename='img/favicon.ico')}}" type="image/x-icon" />
+    <title>Comida | Login</title>
 </head>
 
 <body>
@@ -39,7 +41,7 @@
                 {% with messages=get_flashed_messages()%} {% if messages %}
                 <ul>
                     {% for message in messages %}
-                    <li>{{ message }}</li>
+                    <li class="message">{{ message }}</li>
                     {% endfor %}
                 </ul>
                 {% endif %} {% endwith %}
